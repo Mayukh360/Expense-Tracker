@@ -80,7 +80,7 @@ function displayItems(){
     ul.appendChild(li);
   }
   }
-  window.addEventListener('load', () => {
+  addEventListener('load', () => {
     displayItems();
   });
   
