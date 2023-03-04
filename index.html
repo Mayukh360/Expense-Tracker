@@ -15,7 +15,7 @@
     <form onsubmit="saveToLocalStorage(event)">
         <div class="container mt-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-3">
                     <div class="input-group mb-3">
                         <span class="input-group-text">Expense amount</span>
                         <input id="amount" type="number" class="form-control" placeholder="Enter amount">
@@ -28,18 +28,18 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="input-group mb-3 d-flex">
+                    <div class="input-group mb-3 ">
                         <label for="category-select" class="input-group-text me-2">Category</label>
                         <select type="category" id="category-select" class="form-select">
-                            <option selected>Choose a category</option>
+                            <option selected>Choose category</option>
                             <option value="horror-movies">Horror movies</option>
                             <option value="comedy-movies">Comedy movies</option>
                             <option value="thriller-movies">Thriller movies</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-1">
-                    <button type="submit" class="btn btn-primary">Add</button>
+                <div class="col-2">
+                    <button type="submit" >Add Expense</button>
                 </div>
             </div>
         </div>

@@ -23,7 +23,11 @@ function displayItems(){
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     let obj;
+    //try and catch is used for error handling
+    //if try block throws and exception then catch block will run
+    //If an exception is caught in the catch block, then the localStorage.removeItem(key) method is called to remove the invalid data from the localStorage object, and the continue statement is used to skip to the next iteration of the loop.
     try {
+      //retrieving data from local storage
       obj = JSON.parse(localStorage.getItem(key));
     } catch (e) {
       localStorage.removeItem(key);
